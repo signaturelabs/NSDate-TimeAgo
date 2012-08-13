@@ -10,7 +10,6 @@
 -(NSString *)timeAgo {
     NSDate *now = [NSDate date];
     double deltaSeconds = [self timeIntervalSinceDate:now];
-    DLog(@"deltaSeconds: %f", deltaSeconds);
     double deltaMinutes = deltaSeconds / 60.0f;
 
     // stuff in the past, needs to be comparing against negative values
